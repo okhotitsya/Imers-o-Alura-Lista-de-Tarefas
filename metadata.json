@@ -1,0 +1,6 @@
+{
+  "name": "TaskFlow — Gerenciador de Tarefas Desktop",
+  "description": "Aplicação desktop em Python e Tkinter com SQLite para gerenciamento moderno de tarefas, métricas de produtividade e testes automatizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

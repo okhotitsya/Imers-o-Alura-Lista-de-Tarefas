@@ -1,0 +1,10 @@
+# TaskFlow — Gerenciador de Tarefas Desktop
+# O projeto utiliza exclusivamente a biblioteca padrão do Python (Python Standard Library):
+# - tkinter e tkinter.ttk (Interface gráfica)
+# - sqlite3 (Persistência e banco de dados)
+# - unittest (Testes automatizados)
+# - dataclasses, datetime, pathlib (Estruturas de dados e caminhos de sistema)
+#
+# Não há dependências externas obrigatórias (pip) a serem instaladas.
+# No Linux (Debian/Ubuntu), caso o Tkinter não venha pré-instalado com a distribuição Python, execute:
+# sudo apt-get install python3-tk
