@@ -51,25 +51,36 @@ O projeto foi projetado com foco em arquitetura limpa, separação clara de resp
 ## 📁 Estrutura do Projeto
 
 ```text
-taskflow/
-├── main.py              # Interface gráfica, loop Tkinter e callbacks de eventos
-├── database.py          # Gerenciamento de conexões, criação de tabelas e queries SQLite
-├── models.py            # Entidades Task e ProductivityMetrics com dataclasses
-├── services.py          # Regras de negócio, validações e cálculo de métricas
-├── requirements.txt     # Informações de dependências da biblioteca padrão
-├── README.md            # Documentação completa e guia de estudo
-├── .gitignore           # Ignora caches Python e bancos de dados locais
-├── data/                # Diretório onde o banco taskflow.db é persistido
-└── tests/
-    ├── __init__.py      # Pacote de testes
-    └── test_services.py # 12 testes unitários automatizados com unittest
+.
+├── README.md            # Documentação completa exibida no GitHub
+├── taskflow/            # Código-fonte da aplicação desktop Python
+│   ├── main.py          # Interface gráfica Tkinter com Calendário e métricas
+│   ├── database.py      # Gerenciamento de conexões e queries SQLite
+│   ├── models.py        # Entidades Task e ProductivityMetrics com dataclasses
+│   ├── services.py      # Regras de negócio, validações e cálculo de métricas
+│   ├── requirements.txt # Informações de dependências da biblioteca padrão
+│   ├── run.sh / run.bat # Scripts prontos de execução rápida
+│   ├── .gitignore       # Ignora caches Python e bancos de dados locais
+│   ├── data/            # Diretório onde o banco taskflow.db é persistido
+│   └── tests/
+│       ├── __init__.py  # Pacote de testes
+│       └── test_services.py # Testes unitários automatizados com unittest
 ```
 
 ---
 
 ## 🚀 Como Executar o Projeto
 
-### 1. Pré-requisitos
+### 1. Clonar o Repositório
+
+```bash
+git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git
+cd Imers-o-Alura-Lista-de-Tarefas
+```
+
+---
+
+### 2. Pré-requisitos
 
 - Python 3.10 ou superior instalado em seu sistema operacional.
 - No **Linux (Ubuntu/Debian)**, se o Tkinter não estiver presente, instale:

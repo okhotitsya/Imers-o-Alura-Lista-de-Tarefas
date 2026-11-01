@@ -80,8 +80,8 @@ export default function App() {
       type: 'ok',
     },
     {
-      command: 'git clone https://github.com/seu-usuario/taskflow.git',
-      output: "Cloning into 'taskflow'...\nremote: Enumerating objects: 42, done.\nremote: Total 42 (delta 18), reused 40 (delta 16)\nUnpacking objects: 100% (42/42), done.",
+      command: 'git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git',
+      output: "Cloning into 'Imers-o-Alura-Lista-de-Tarefas'...\nremote: Enumerating objects: 42, done.\nremote: Total 42 (delta 18), reused 40 (delta 16)\nUnpacking objects: 100% (42/42), done.",
       time: '19:00:02',
       type: 'info',
     },
@@ -102,8 +102,8 @@ export default function App() {
       setCliLogs((prev) => [
         ...prev,
         {
-          command: 'git clone https://github.com/seu-usuario/taskflow.git && cd taskflow',
-          output: "Cloning into 'taskflow'...\nReceiving objects: 100% (42/42), 38.50 KiB | 2.41 MiB/s, done.\nResolving deltas: 100% (18/18), done.\nDiretório ativo: ~/taskflow",
+          command: 'git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git && cd Imers-o-Alura-Lista-de-Tarefas',
+          output: "Cloning into 'Imers-o-Alura-Lista-de-Tarefas'...\nReceiving objects: 100% (42/42), 38.50 KiB | 2.41 MiB/s, done.\nResolving deltas: 100% (18/18), done.\nDiretório ativo: ~/Imers-o-Alura-Lista-de-Tarefas",
           time: now,
           type: 'ok',
         },
@@ -182,8 +182,8 @@ export default function App() {
         setCliLogs((p) => [
           ...p,
           {
-            command: 'git clone https://github.com/seu-usuario/taskflow.git && cd taskflow',
-            output: "Cloning into 'taskflow'...\nReceiving objects: 100% (42/42), done.",
+            command: 'git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git && cd Imers-o-Alura-Lista-de-Tarefas',
+            output: "Cloning into 'Imers-o-Alura-Lista-de-Tarefas'...\nReceiving objects: 100% (42/42), done.",
             time: new Date().toLocaleTimeString('pt-BR'),
             type: 'ok',
           },
@@ -526,6 +526,16 @@ export default function App() {
               <BookOpen className="w-3.5 h-3.5" />
               <span>Guia do Estudante</span>
             </button>
+            <a
+              href="https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 transition-all border border-slate-700/60 text-xs font-semibold whitespace-nowrap ml-1"
+              title="Acessar Repositório no GitHub"
+            >
+              <span>GitHub</span>
+              <ExternalLink className="w-3 h-3 text-slate-400" />
+            </a>
           </nav>
         </div>
       </header>
@@ -1617,10 +1627,10 @@ export default function App() {
                     onClick={() => {
                       const allCmds =
                         guideOs === 'windows'
-                          ? `git clone https://github.com/seu-usuario/taskflow.git\ncd taskflow\npython -m venv venv\n.\\venv\\Scripts\\Activate.ps1\npip install -r requirements.txt\npython main.py`
+                          ? `git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git\ncd Imers-o-Alura-Lista-de-Tarefas\npython -m venv venv\n.\\venv\\Scripts\\Activate.ps1\npip install -r taskflow/requirements.txt\npython taskflow/main.py`
                           : guideOs === 'linux'
-                          ? `git clone https://github.com/seu-usuario/taskflow.git\ncd taskflow\nsudo apt update && sudo apt install -y python3-tk\npython3 -m venv venv\nsource venv/bin/activate\npip install -r requirements.txt\npython3 main.py`
-                          : `git clone https://github.com/seu-usuario/taskflow.git\ncd taskflow\npython3 -m venv venv\nsource venv/bin/activate\npip install -r requirements.txt\npython3 main.py`;
+                          ? `git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git\ncd Imers-o-Alura-Lista-de-Tarefas\nsudo apt update && sudo apt install -y python3-tk\npython3 -m venv venv\nsource venv/bin/activate\npip install -r taskflow/requirements.txt\npython3 taskflow/main.py`
+                          : `git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git\ncd Imers-o-Alura-Lista-de-Tarefas\npython3 -m venv venv\nsource venv/bin/activate\npip install -r taskflow/requirements.txt\npython3 taskflow/main.py`;
                       copyTextToClipboard(allCmds, 'quick-all');
                     }}
                     className="flex-1 md:flex-initial flex items-center justify-center gap-2 px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-lg shadow-lg shadow-emerald-600/20 transition cursor-pointer"
@@ -1698,11 +1708,11 @@ export default function App() {
 
                   <div className="relative group">
                     <pre className="bg-[#0b0e14] border border-slate-800 rounded-xl p-3.5 text-xs font-mono text-blue-300 overflow-x-auto">
-{`git clone https://github.com/seu-usuario/taskflow.git\ncd taskflow`}
+{`git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git\ncd Imers-o-Alura-Lista-de-Tarefas`}
                     </pre>
                     <button
                       type="button"
-                      onClick={() => copyTextToClipboard('git clone https://github.com/seu-usuario/taskflow.git\ncd taskflow', 'step1-clone')}
+                      onClick={() => copyTextToClipboard('git clone https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas.git\ncd Imers-o-Alura-Lista-de-Tarefas', 'step1-clone')}
                       className="absolute right-2.5 top-2.5 px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white rounded text-[11px] font-medium flex items-center gap-1 transition"
                     >
                       {copiedCodeId === 'step1-clone' ? <Check className="w-3 h-3 text-emerald-400" /> : <Copy className="w-3 h-3" />}

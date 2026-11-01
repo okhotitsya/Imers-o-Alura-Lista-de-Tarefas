@@ -86,7 +86,7 @@ print("OK")
       'services.py': 'taskflow/services.py',
       'test_services.py': 'taskflow/tests/test_services.py',
       'requirements.txt': 'taskflow/requirements.txt',
-      'README.md': 'taskflow/README.md',
+      'README.md': fs.existsSync(path.resolve(__dirname, 'README.md')) ? 'README.md' : 'taskflow/README.md',
     };
 
     const relativePath = allowedFiles[requestedFile];
