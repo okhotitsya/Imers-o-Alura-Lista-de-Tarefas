@@ -8,6 +8,9 @@ O projeto foi projetado com foco em arquitetura limpa, separação clara de resp
 
 ---
 
+<img src="https://github.com/okhotitsya/Imers-o-Alura-Lista-de-Tarefas/blob/main/imagem-todolist.png?raw=true">
+
+
 ## 🌟 Principais Funcionalidades
 
 1. **Cadastro Rápido de Tarefas**:
